@@ -80,7 +80,7 @@
     transform: scale(1);
   }
   70% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   100% {
@@ -91,7 +91,7 @@
 .header-img {
   animation: scaleimg ease-in-out 8s infinite;
 
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
 
   top: 0;
