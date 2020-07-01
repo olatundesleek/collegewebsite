@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 * {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-decoration: none;
+}
+body {
 }
 .page-header-content {
   margin: 30px 50px;
@@ -23,7 +27,7 @@
   z-index: -1;
   width: 100%;
   overflow: hidden;
-  height: 610px;
+  height: auto;
   border-bottom-right-radius: 20%;
 }
 .slider {
@@ -39,6 +43,16 @@
   color: #413f53;
   text-shadow: 1px 1px 1px white;
   animation: textent 2s, textappear 2s;
+}
+.article-title h1 {
+  font-family: "Concert One", cursive;
+  font-size: 40px;
+  color: #413f53;
+  text-shadow: 1px 1px 1px white;
+}
+.article-content-p {
+  color: #309aa9;
+  font-family: "Roboto", sans-serif;
 }
 @keyframes textent {
   0% {
@@ -70,6 +84,7 @@
 .side-nav {
   background-color: #fff;
   padding: 50px 10px;
+  height: 95vh;
 }
 .header {
   display: flex;
@@ -91,7 +106,7 @@
 .header-img {
   animation: scaleimg ease-in-out 8s infinite;
 
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
 
   top: 0;
@@ -108,8 +123,11 @@
 .social-links {
   display: flex;
   flex-direction: column;
-  margin: 180px 0;
+  margin: 160px 0;
   text-align: center;
+}
+.social-links.margin {
+  margin: 0;
 }
 .social-links .fab {
   margin: 10px 0;
@@ -136,7 +154,7 @@
   color: #403e52;
   font-size: 14px;
 
-  font-family: "Abril Fatface", cursive;
+  font-family: "Roboto", sans-serif;
 }
 .search {
   color: #333333;
@@ -250,8 +268,11 @@
   top: 0;
 }
 .mobile-menu-list {
-  margin: 110px 0;
+  margin: 90px 0;
   display: none;
+}
+.mobile-menu-list li {
+  padding: 5px 0;
 }
 .mobile-menu-list.show {
   display: block;
@@ -275,7 +296,7 @@
   color: #403e52;
   font-size: 14px;
 
-  font-family: "Abril Fatface", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 /* .hamburger.open .hamburger-bar:nth-child(2) {
@@ -296,9 +317,9 @@
     display: none;
   }
 
-  .social-links {
-    margin: 80px 0;
-  }
+  /* .social-links {
+    margin: 20px 0;
+  } */
   .page-header-content {
     margin: 30px 20px;
   }
@@ -309,4 +330,10 @@
     font-size: 30px;
     left: 20px;
   }
+  .header-img {
+    height: 80vh;
+  }
+}
+.article-container {
+  display: flex;
 }
