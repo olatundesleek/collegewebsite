@@ -436,6 +436,9 @@ i.fa-leanpub {
     height: 80vh;
     object-fit: cover;
   }
+  #why-join-container h1 {
+    padding: 20px;
+  }
   .side-nav {
     height: 57vh;
     background-color: #553d67;
