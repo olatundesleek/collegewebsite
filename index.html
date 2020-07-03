@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png" />
   </head>
   <body>
     <div id="page-container">
@@ -36,15 +37,23 @@
           </div>
           <div class="page-header-slider">
             <div class="slider">
-              <img
-                class="header-img"
-                src="./assets/images/header-image.jpg"
-                srcset="
-                  ./assets/images/header-image1mobile.jpg  350w,
-                  ./assets/images/header-image1tablet.jpg  770w,
-                  ./assets/images/header-image1.jpg       2121w
-                "
-              />
+              <picture class="header-img">
+                <source
+                  class="header-img"
+                  srcset="/assets/images/header-image1.jpg"
+                  media="(max-width: 1200px)"
+                />
+                <source
+                  class="header-img"
+                  srcset="/assets/images/header-image1mobile.jpg"
+                  media="(max-width: 768px)"
+                />
+                <img
+                  class="header-img"
+                  srcset="/assets/images/header-image1.jpg"
+                  alt="…"
+                />
+              </picture>
 
               <h1 class="succeed">SUCCEED</h1>
               <h1 class="slider-title">
@@ -101,9 +110,8 @@
                 Highly experienced and certified Instructor. Providing latest
                 technology digital transformation training program
               </p>
-              <h2><i class="fa fa-check"></i>Trusted Certification</h2>
-              <!-- <p>ASSOCHAM National Brand Summit & Excellence Awards 2016.
-			</p> -->
+              <h3><i class="fa fa-check"></i>Trusted Certification</h3>
+              <p>ASSOCHAM National Brand Summit & Excellence Awards 2016.</p>
             </div>
             <div id="why-join-section2">
               <h3><i class="fa fa-arrow-right"></i>Methodology</h3>
@@ -111,7 +119,7 @@
                 Project based learning methodology. Learning resources like
                 Physical Courseware for each students,
               </p>
-              <h2><i class="fa fa-film"></i>Video Lessons</h2>
+              <h3><i class="fa fa-film"></i>Video Lessons</h3>
               <p>Videos, reference sites, online assessments etc.</p>
             </div>
           </div>
